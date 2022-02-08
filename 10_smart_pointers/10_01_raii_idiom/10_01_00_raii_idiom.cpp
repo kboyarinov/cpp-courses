@@ -2,6 +2,7 @@
 
 template <typename T>
 class raii_pointer {
+public:
     raii_pointer( T* arg ) : my_ptr(ptr) {}
 
     ~raii_pointer() { delete my_ptr; }
